@@ -29,14 +29,10 @@ class BankAccount{
 
 }
 $rekening = new BankAccount(12345678,50000);
-
-
 echo "Nomor Rekening: {$rekening->accountNumber}\n";
 echo "Saldo: Rp. {$rekening->getbalance()}\n\n";
-
 $rekening->deposit(10000);
 echo "Saldo sekarang: Rp. {$rekening->getbalance()}\n\n";
-
 $rekening->withdraw(40000);
 echo "Saldo sekarang: Rp. {$rekening->getbalance()}\n"
 ?>
